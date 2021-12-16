@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="639.0" style="-fx-background-color: LAVENDER;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogInController">
+   <children>
+      <Button layoutX="463.0" layoutY="335.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: LIGHTGRAY;" text="Exit" textFill="#df0000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="233.0" layoutY="40.0" prefHeight="35.0" prefWidth="155.0" style="-fx-background-color: white;" text=" Log In" textAlignment="CENTER" textFill="#2134a1">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeID" layoutX="217.0" layoutY="131.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter your ID number" />
+      <Label alignment="CENTER" layoutX="80.0" layoutY="136.0" prefHeight="26.0" prefWidth="115.0" text="Employee ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerNID" layoutX="216.0" layoutY="223.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter your NID number" />
+      <Label alignment="CENTER" layoutX="80.0" layoutY="227.0" prefHeight="26.0" prefWidth="115.0" text="Customer NID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="351.0" layoutY="174.0" mnemonicParsing="false" onAction="#LogEmployee" prefHeight="10.0" prefWidth="54.0" style="-fx-background-color: #6be13f;" text="Submit" textFill="#0b0b0b" />
+      <Button layoutX="351.0" layoutY="270.0" mnemonicParsing="false" onAction="#LogCustomer" prefHeight="10.0" prefWidth="54.0" style="-fx-background-color: #6be13f;" text="Submit" textFill="#0b0b0b" />
+   </children>
+</AnchorPane>

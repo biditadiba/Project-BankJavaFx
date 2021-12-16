@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="824.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateAccountController">
+   <children>
+      <ComboBox fx:id="comboBox" layoutX="336.0" layoutY="157.0" onAction="#setType" prefWidth="150.0" promptText="Select your choice" />
+      <Label alignment="CENTER" layoutX="317.0" layoutY="33.0" prefHeight="42.0" prefWidth="200.0" style="-fx-background-color: white;" text="Create Account" textFill="#2134a1">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="20.0" />
+         </font></Label>
+      <Label layoutX="147.0" layoutY="103.0" prefHeight="18.0" prefWidth="127.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="147.0" layoutY="161.0" prefHeight="18.0" prefWidth="127.0" text="Type">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lAccType" alignment="CENTER" layoutX="300.0" layoutY="217.0" prefHeight="34.0" prefWidth="234.0" style="-fx-background-color: white;" text="Account Type">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Label>
+      <Label layoutX="136.0" layoutY="277.0" prefHeight="19.0" prefWidth="136.0" text="Account Balance">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lUserId" layoutX="140.0" layoutY="367.0" prefHeight="19.0" prefWidth="136.0" text="Student ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lMaxWithLimit" layoutX="139.0" layoutY="423.0" prefHeight="19.0" prefWidth="150.0" text="Max Withdraw Limit">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lInstName" layoutX="142.0" layoutY="465.0" prefHeight="18.0" prefWidth="166.0" text="Institution Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tUserName" layoutX="333.0" layoutY="99.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter your name" />
+      <TextField fx:id="tUserNID" layoutX="333.0" layoutY="313.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter NID" />
+      <TextField fx:id="tUserId" layoutX="333.0" layoutY="363.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter student ID" />
+      <TextField fx:id="tMaxWithLimit" layoutX="333.0" layoutY="419.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter withdraw limit" />
+      <TextField fx:id="tAccBalance" layoutX="333.0" layoutY="273.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter balance" />
+      <TextField fx:id="tInstName" layoutX="333.0" layoutY="461.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter institution name" />
+      <Label fx:id="lUserNID" layoutX="136.0" layoutY="317.0" prefHeight="19.0" prefWidth="136.0" text="User NID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="lTradeNum" layoutX="140.0" layoutY="502.0" prefHeight="19.0" prefWidth="142.0" text="Tradelicense Number">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="tTradeNum" layoutX="332.0" layoutY="498.0" prefHeight="26.0" prefWidth="157.0" promptText="Enter tradelicense" />
+      <Button layoutX="654.0" layoutY="563.0" mnemonicParsing="false" onAction="#submit" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #6be13f;" text="Submit" textFill="#0b0b0b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="73.0" layoutY="564.0" mnemonicParsing="false" onAction="#back" prefHeight="10.0" prefWidth="54.0" style="-fx-background-color: #6be13f;" text="Back" textFill="#0b0b0b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listView" layoutX="585.0" layoutY="365.0" prefHeight="42.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="614.0" layoutY="296.0" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: white;" text="Account Number">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="inValid" layoutX="347.0" layoutY="568.0" prefHeight="26.0" prefWidth="127.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="808.0" style="-fx-background-color: LAVENDER;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SumTranController">
+   <children>
+      <Label alignment="CENTER" layoutX="198.0" layoutY="47.0" prefHeight="42.0" prefWidth="441.0" style="-fx-background-color: white;" text="Summary/Transaction of an account " textFill="#2134a1">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="150.0" onDragDetected="#getChoice1" text="Select your choice">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="208.0" text="Account Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="304.0" layoutY="287.0" prefHeight="42.0" prefWidth="230.0" style="-fx-background-color: white;" text="List of specific type" textFill="#2134a1">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="370.0" onDragDetected="#getChoice2" prefHeight="18.0" prefWidth="97.0" text="Account Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tField" layoutX="344.0" layoutY="204.0" prefHeight="26.0" prefWidth="167.0" promptText="Enter your account number" />
+      <Button fx:id="Button1" layoutX="541.0" layoutY="204.0" mnemonicParsing="false" onAction="#submit1" style="-fx-background-color: #6be13f;" text="Submit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="Button2" layoutX="541.0" layoutY="366.0" mnemonicParsing="false" onAction="#submit2" style="-fx-background-color: #6be13f;" text="Submit">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ComboBox fx:id="comboBox1" layoutX="344.0" layoutY="146.0" onAction="#getChoice1" prefHeight="26.0" prefWidth="167.0" />
+      <ComboBox fx:id="comboBox2" layoutX="344.0" layoutY="366.0" onAction="#getChoice2" prefHeight="26.0" prefWidth="167.0" promptText="Select your choice " />
+      <Button layoutX="133.0" layoutY="439.0" mnemonicParsing="false" onAction="#back" prefHeight="10.0" prefWidth="54.0" style="-fx-background-color: #6be13f;" text="Back" textFill="#0b0b0b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="inValid" layoutX="598.0" layoutY="141.0" prefHeight="34.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

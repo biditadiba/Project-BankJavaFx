@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="728.0" style="-fx-background-color: LAVENDER;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeeMenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="210.0" layoutY="35.0" prefHeight="42.0" prefWidth="286.0" style="-fx-background-color: white;" text="Employee Menu" textFill="#2134a1">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="103.0" layoutY="118.0" mnemonicParsing="false" onAction="#addNewAccount" prefHeight="42.0" prefWidth="494.0" text="Add a new Account">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="104.0" layoutY="185.0" mnemonicParsing="false" onAction="#depositWithdrawTransfer" prefHeight="42.0" prefWidth="494.0" text="Deposit/Withdraw/Transfer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="102.0" layoutY="250.0" mnemonicParsing="false" onAction="#summaryAccountTransactionListOfSpecific" prefHeight="42.0" prefWidth="502.0" text="Summary of an account/Transactions of an account/List of specific type of account">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="101.0" layoutY="320.0" mnemonicParsing="false" onAction="#ListOffAllAccount" prefHeight="42.0" prefWidth="502.0" text="List of all accounts">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="103.0" layoutY="430.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #6be13f;" text="Back" textFill="#0b0b0b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
